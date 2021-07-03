@@ -47,12 +47,12 @@ client.connect(err => {
     })
   })
 
-app.delete('/eventsDelete/:id'), (req, res =>{
-  const id = ObjectID(req.params.id)
-  console.log('delete', id);
-  eventCollection.findOneAndDelete({_id: id})
-  .then(document => res.send(!!document.value))
-})
+// app.delete('/eventsDelete/:id'), (req, res =>{
+//   const id = ObjectID(req.params.id)
+//   console.log('delete', id);
+//   eventCollection.findOneAndDelete({_id: id})
+//   .then(document => res.send(!!document.value))
+// })
 
 
 
